@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+
+/* here is the color variables */
+:root {
+    --main-bg-color: #f7f7ff;
+    --footer-bg-color: #FFFD8C;  
+    --text-color: #333131;
+    --green-color: #57EEAB;
+    --salmon-color: #FF8480;
+}
+
+/* here is the definition of the fonts */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}

@@ -1,0 +1,264 @@
+.home-container{
+    background-color: var(--main-bg-color);
+}
+
+.home-container,
+.footer {
+    padding: 0 36px;
+}
+
+.header {
+    padding: 25px 0;
+}
+
+.header__logo {
+    width: 115px;
+}
+
+.main {
+    color: var(--text-color);
+    padding-bottom: 45px;
+}
+
+.main__title {
+    font-size: 60px;
+    margin-bottom: 107px;
+}
+
+.main__description {
+    font-size: 24px;
+}
+
+.main__scooter {
+    margin: 16px 0;
+}
+
+.apply-now-form {
+    width: 100%;
+    background-color: white;
+    box-shadow: 5px 5px 10px -1px rgb(125 125 125 / 78%);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.apply-now-form__title,
+.apply-now-form__description {
+    font-weight: bold;
+}
+
+.apply-now-form__title {
+    font-size: 40px;
+    margin-bottom: 13px;
+}
+
+.apply-now-form__description {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.apply-now-form__input {
+    margin-bottom: 15px;
+    width: 100%;
+    background-color: #F4F4F5;
+}
+
+.apply-now-form__terms {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.apply-now-form__terms-checkbox {
+    zoom: 2;
+    margin-right: 10px;
+}
+
+.apply-now-form__terms-label {
+    font-size: 16px;
+}
+
+.apply-now-form__button {
+    height: 55px;
+    background-color: var(--green-color);
+    margin-bottom: 15px;
+}
+
+.apply-now-form__footer {
+    font-size: 14px;
+}
+
+.apply-now-form__footer-spotlight {
+    color: var(--salmon-color);
+}
+
+.footer {
+    background-color: var(--footer-bg-color);
+    padding-top: 21px;
+}
+
+.footer__title {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+
+.footer__description {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.footer__calculate {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer__calculate-input-hours , 
+.footer__calculate-input-city {
+    background-color: #F7F7FF;
+    margin-bottom: 10px;
+}
+
+.footer__calculate-input-hours {
+    width: 20%;
+}
+
+.footer__calculate-input-city {
+    width: 75%;
+}
+
+.footer__calculate-button {
+    height: 40px;
+    background-color: var(--salmon-color);
+    color: white;
+}
+
+.footer__medias {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.footer__medias img {
+    width: 31px;
+    height: 31px;
+}
+
+.footer__medias a:not(:last-child) {
+    margin-right: 41px;
+}
+
+@media only screen and (min-width: 768px) {
+    .home-container,
+    .footer {
+        padding: 0 80px;
+    }
+
+    .main__title {
+        font-size: 80px;
+        margin-bottom: 59px;
+    }
+
+    .main__scooter {
+        margin-top: -20px;
+    }
+
+    .apply-now-form {
+        padding: 40px;
+    }
+
+    .apply-now-form__title {
+        margin-bottom: 13px;
+    }
+
+    .apply-now-form__description {
+        font-size: 30px;
+    }
+
+    .apply-now-form__input {
+        padding: 20px 16px;
+    }
+
+    .apply-now-form__button {
+        font-size: 32px;
+    }
+
+    .apply-now-form__terms-label {
+        font-size: 20px;
+    }
+
+    .apply-now-form__footer {
+        font-size: 17px;
+        margin-left: 25px;
+    }
+
+    .apply-now-form__footer-spotlight {
+        margin-left: 23px;
+    }
+
+    .footer {
+        padding-top: 20px;
+    }
+
+    .footer__calculate-input-hours {
+        width: 20%;
+    }
+
+    .footer__calculate-input-city {
+        width: 40%;
+    }
+
+    .footer__calculate-button {
+        width: 35%;
+    }
+
+    .footer__medias {
+        margin-top: 24px;
+        padding-bottom: 19px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    .header {
+        padding: 25px 0 0;
+    }
+
+    .main {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 107px;
+        padding-bottom: 92px;
+    }
+
+    .main__texts {
+        max-width: 500px;
+    }
+
+    .main__title {
+        margin-bottom: 69px;
+    }
+
+    .main__scooter {
+        width: 40%;
+    }
+
+    .apply-now-form {
+        max-width: 540px;
+        max-height: 620px;
+    }
+
+    .footer {
+        padding-top: 43px;
+        padding-bottom: 43px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer__left {
+        max-width: 600px;
+    }
+
+    .apply-now-form__footer {
+        font-size: 15px;
+    }
+}
