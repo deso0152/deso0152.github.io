@@ -1,0 +1,61 @@
+/* styles of header component */
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    margin: 0 20px;
+}
+
+.header__logo {
+    width: 60px;
+}
+
+.header__link-list {
+    display: flex;
+    align-items: center;
+}
+
+.header__link-item a{
+    text-decoration: none;
+    color: var(--tertiary-color);
+    transition: .2s;
+}
+
+.header__link-item:not(:last-child) {
+    font-size: 12px;
+    margin-right: 10px;
+    font-weight: var(--font-weight-medium);
+    cursor: pointer;
+}
+
+.header__link-item a:hover {
+    color: #96a0c0;
+    
+}
+
+.header__link-item-icon {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        margin: 0 40px;
+    }
+
+    .header__logo {
+        width: 90px;
+    }
+
+    .header__link-item:not(:last-child) {
+        font-size: 18px;
+        margin-right: 20px;
+    }
+
+    .header__link-item-icon {
+        width: 30px;
+        height: 30px;
+    }
+}

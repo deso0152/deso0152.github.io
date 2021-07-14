@@ -1,0 +1,64 @@
+/* styles of flavors page */
+
+.flavors {
+    background-color: var(--secondary-color);
+}
+
+.flavors__title {
+    color: var(--white-color);
+    font-size: 50px;
+    font-style: italic;
+    font-weight: var(--font-weight-bold);
+    text-align: center;
+    padding: 80px 0 40px;
+}
+
+.flavors__subtitle {
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    color: var(--white-color);
+    font-size: 20px;
+    line-height: 25px;
+    margin-bottom: 40px;
+}
+
+.flavors__list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 250px;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.flavors__flavor-name {
+    color: var(--white-color);
+    font-size: 18px;
+    font-weight: var(--font-weight-regular);
+    font-style: italic;
+}
+
+.flavors__list-item-image {
+    width: 100px;
+    height: 100px;
+}
+
+@media screen and (min-width: 768px) {
+    .flavors__subtitle {
+        margin-bottom: 80px;
+        width: 50%;
+    }
+
+    .flavors__list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 80%;
+        margin: 0 auto;
+        padding-bottom: 80px;
+    }
+
+    .flavors__list-item {
+        margin-right: 80px;
+    }
+}

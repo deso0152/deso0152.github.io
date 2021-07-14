@@ -1,0 +1,15 @@
+/* default variables */
+:root {
+    --primary-color: #a6d4c9;
+    --secondary-color: #af197d;
+    --tertiary-color: #43464f;
+    --white-color: #ffffff;
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 800;
+}
+
+html {
+    scroll-behavior: smooth
+}

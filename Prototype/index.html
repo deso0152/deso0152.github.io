@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/home.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+
+    <title>Dream Cream</title>
+</head>
+<body>
+    <!-- header of page -->
+    <header id="top" class="header">
+        <a href="index.html" class="header__link">
+            <img class="header__logo" src="./assets/Dream-Cream-logo.png" />
+        </a>
+        <nav class="header__menu">
+            <ul class="header__link-list">
+                <li class="header__link-item">
+                    <a href="index.html">HOME</a>
+                </li>
+                <li class="header__link-item">
+                    <a href="flavors.html">FLAVORS</a>
+                </li>
+                <li class="header__link-item">
+                    <a href="locations.html">LOCATIONS</a>
+                </li>
+                <li class="header__link-item">
+                    <a href="contact.html">CONTACT</a>
+                </li>
+                <li class="header__link-item">
+                    <a href="#">
+                        <img class="header__link-item-icon" src="./assets/instagram.png" />
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <section class="hero">
+            <img class="hero__wave" src="./assets/background-pink.png" />
+            <h1 class="hero__title">
+                We`re serious about
+                <p>ice cream</p>
+            </h1>
+            <img class="hero__icecream" src="./assets/icecream.png">
+            <h2 class="hero__subtitle">
+                for all
+                <p>the moods</p>
+            </h2>
+        </section>
+        <section class="flavors">
+            <h3 class="flavors__title">Today`s Flavors</h3>
+            <ul class="flavors__list">
+                <li class="flavors__list-item">
+                    <img src="./assets/Flavor-01.png" />
+                    <div class="flavors__list-flag">
+                        <div class="flavors__list-item-left-triangle"></div>
+                        Pumpkin
+                        <div class="flavors__list-item-right-triangle"></div>
+                    </div>
+                </li>
+                <div class="flavors__separator"></div>
+                <li class="flavors__list-item">
+                    <img src="./assets/Flavor-02.png" />
+                    <div class="flavors__list-flag">
+                        <div class="flavors__list-item-left-triangle"></div>
+                        Mint chip
+                        <div class="flavors__list-item-right-triangle"></div>
+                    </div>
+                </li>
+                <div class="flavors__separator"></div>
+                <li class="flavors__list-item">
+                    <img src="./assets/Flavor-03.png" />
+                    <div class="flavors__list-flag">
+                        <div class="flavors__list-item-left-triangle"></div>
+                        Pecan Toffeen
+                        <div class="flavors__list-item-right-triangle"></div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+        <section class="ingredients">
+            <h3 class="ingredients__title">
+                The best ingredients you could ever imagine!
+            </h3>
+
+            <div class="ingredients__wrapper">
+                <p class="ingredients__subtitle">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sunt maxime harum natus beatae quidem labore minima, laudantium error officiis vel quia esse magnam obcaecati. 
+                    Quos expedita officia qui asperiores dolor!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sunt maxime harum natus beatae quidem labore minima, laudantium error officiis vel quia esse magnam obcaecati. 
+                    Quos expedita officia qui asperiores dolor!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sunt maxime harum natus beatae quidem labore minima, laudantium error officiis vel quia esse magnam obcaecati. 
+                    Quos expedita officia qui asperiores dolor!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Sunt maxime harum natus beatae quidem labore minima, laudantium error officiis vel quia esse magnam obcaecati. 
+                    Quos expedita officia qui asperiores dolor! 
+                </p>
+    
+                <img class="ingredients__image" src="assets/cone.png">
+            </div>            
+        </section>
+        <section class="freezer">
+            <div class="freezer__left-side">
+                <h3 class="freezer__title">
+                    Find in a freezer
+                    <p>near you</p>
+                </h3>
+                <button class="freezer__button">
+                    order online
+                </button>
+            </div>
+            <img class="freezer__image" 
+                srcset="./assets/Icecream-pot-1x.png 320w,
+                        ./assets/Icecream-pot-2x.png 800w"
+                src="./assets/Icecream-pot-1x.png">
+        </section>
+        <section class="newsletter">
+            <div class="newsletter__filter"></div>
+            <div class="newsletter__wrapper">
+                <h3 class="newsletter__title">get the scoop! join our newsletter</h3>
+                <div class="newsletter__input-group">
+                    <input class="newsletter__input" placeholder="email address" />
+                    <button class="newsletter__button">continue</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- footer of page -->
+    <footer class="footer">
+        <img class="footer__logo" src="assets/Dream-Cream-logo-white.png" />
+        <ul class="footer__link-list">
+            <li class="footer__link-item">
+                <a href="index.html">HOME</a>
+            </li>
+            <li class="footer__link-item">
+                <a href="flavors.html">FLAVORS</a>
+            </li>
+            <li class="footer__link-item">
+                <a href="locations.html">LOCATIONS</a>
+            </li>
+            <li class="footer__link-item">
+                <a href="contact.html">CONTACT</a>
+            </li>
+        </ul>
+        <a href="#top" class="footer__to-up">
+            <div class="footer__icon">
+                <span>&#8743;</span>
+            </div>
+            <span class="footer__to-up-text">TOP</span>
+        </a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,64 @@
+/* styles of locations page */
+
+.locations__text {
+    height: 48vh;
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    line-height: 25px;
+}
+
+.locations__image {
+    width: 100%;
+}
+
+.locations__right > .locations__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.locations__text-title {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width: 768px) {
+    .locations__left,
+    .locations__right {
+        display: flex;
+    }
+
+    .locations__text {
+        font-size: 25px;
+        line-height: 30px;
+        text-align: right;
+        margin-right: 50px;
+        justify-content: flex-end;
+    }
+
+    .locations__text span {
+        width: 50%;
+    }
+
+    .locations__image {
+        width: 50%;
+    }
+
+    .locations__right > .locations__text {
+        order: 2;
+        text-align: left;
+        margin-left: 50px;
+    }
+
+    .locations__text-title {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+
+    .locations__right > .locations__image {
+        order: 1;
+    }
+}
