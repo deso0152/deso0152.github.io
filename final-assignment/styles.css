@@ -1,0 +1,514 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* home */
+
+#home {
+    background-image: url('./images/home/01-beer.jpg');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    transition: background-image 0.2s ease-in-out;
+}
+
+/* header */
+
+.header {
+    padding: 20px 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1300px;
+    z-index: 2;
+}
+
+.header.open,
+.header.open .menu {
+    background-color: #000000a6;
+}
+
+.header.open .menu,
+.header.open .close {
+    display: flex;
+}
+
+.header.open .hamburguer {
+    display: none;
+}
+
+.logo-image {
+    max-width: 100px;
+    cursor: pointer;
+}
+
+.close,
+.hamburguer {
+    z-index: 2;
+}
+
+.close {
+    display: none;
+}
+
+.menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 119px;
+    left: 0;
+    width: 100vw;
+    align-items: flex-end;
+    padding: 0 20px 40px;
+}
+
+.list-items {
+    list-style: none;
+    font-weight: bold;
+    text-align: right;
+    margin-bottom: 20px;
+    order: 2;
+}
+
+.list-item {
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.list-item a {
+    color: white;
+}
+
+.social-links {
+    order: 1;
+    margin-bottom: 40px;
+}
+
+.social-image {
+    height: 20px;
+}
+
+@media only screen and (min-width: 768px) {
+    .header {
+        padding: 50px;
+        margin: 0 auto;
+    }
+
+    .menu-icons {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: static;
+        width: max-content;
+        padding: 0;
+    }
+
+    .list-items {
+        list-style: none;
+        margin: 0 20px 0;
+        order: 1;
+        display: flex;
+    }
+    
+    .list-item {
+        cursor: pointer;
+        color: white;
+        font-size: 16px;
+        font-weight: bold;
+        margin: 0 0 0 20px;
+    }
+
+    .social-links {
+        order: 2;
+        margin: 0;
+    }
+}
+
+/* home main */
+
+.main {
+    height: calc(100vh - 160px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.image-selector {
+    list-style: none;
+    margin-bottom: 50px;
+}
+
+.image-selector-item {
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    width: max-content;
+    text-transform: uppercase;
+    color: white;
+}
+
+.image-selector-item:hover,
+.image-selector-item.selected {
+    color: #bcff02;
+}
+
+@media only screen and (min-width: 400px) and (max-width: 767px) {
+    .image-selector-item {
+        font-size: 55px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .main {
+        height: max-content;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding-top: 100px;
+        padding: 50px;
+    }
+
+    .image-selector-item {
+        font-size: 80px;
+    }
+}
+
+
+/* Hero */
+
+.hero,
+.about-footer {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;   
+    position: relative;
+}
+
+.hero-still {
+    background-image: url('./images/still/06.jpg'); 
+}
+
+.hero-food {
+    background-image: url('./images/food/10.jpg');
+}
+
+.hero-about {
+    background-image: url('./images/about/studio-photo.jpg');
+}
+
+.about-footer {
+    background-image: url('./images/about/footer_photo.jpg');
+}
+
+.hero-contact {
+    background-image: url('./images/contact/chair-photo.jpg');
+}
+
+.hero-retouching {
+    background-image: url('./images/food/10.jpg');
+}
+
+.bg-black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 250px);
+    color: white;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hero-description {
+    font-size: 20px;
+    width: 80%;
+}
+
+@media only screen and (min-width: 768px) {
+    .hero-text {
+        height: calc(100vh - 400px);
+    }
+
+    .hero-title {
+        font-size: 50px;
+    }
+
+    .hero-description {
+        font-size: 30px;
+    }
+}
+
+/* introduction */
+
+.introduction {
+    padding: 80px 40px;
+}
+
+.introduction-title {
+    font-size: 25px;
+    margin-bottom: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+    .introduction {
+        max-width: 1300px;
+        margin: 0 auto;
+        padding: 120px 40px 80px;
+    }
+
+    .introduction-title {
+        font-size: 40px;
+    }
+}
+
+/* image gallery */
+
+.gallery-image {
+    width: 100%;
+}
+
+/* about */
+
+.about-resume {
+    padding: 100px 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.resume-text {
+    margin-bottom: 40px;
+}
+
+.resume-image {
+    width: 100%;
+}
+
+.about-footer {
+    position: relative;
+    height: 60vh;
+}
+
+.about-footer .bg-black {
+    height: 60vh;
+}
+
+.footer-texts {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 40px;
+}
+
+.footer-text {
+    font-weight: bold;
+    color: white;
+    font-size: 18px;
+    text-transform: uppercase;
+}
+
+@media only screen and (min-width: 768px) {
+    .about-resume {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding: 200px 40px;
+    }
+
+    .resume-texts,
+    .resume-image {
+        width: 40%;
+    }
+
+    .resume-texts {
+        text-align: right;
+    }
+
+    .resume-text:last-child {
+        margin: 0;
+    }
+
+    .footer-text {
+        font-size: 35px;
+    }
+}
+
+/* Contact */
+
+.contact .hero-text {
+    text-align: right;
+    align-items: flex-end;
+    padding: 0 40px;
+}
+
+.contact .hero-title {
+    margin-bottom: 20px;
+    font-size: 37px;
+}
+
+.contact .hero-description {
+    font-size: 14px;
+    width: 100%;
+}
+
+.contact-infos {
+    padding: 70px 40px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-input {
+    margin-bottom: 30px;
+    padding: 8px 15px;
+}
+
+.form-input::placeholder {
+    color: #c8c8c8;
+}
+
+.form-button {
+    background-color: #c8c8c8;
+    border: none;
+    color: white;
+    width: 150px;
+    padding: 10px 0;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.contact-address {
+    margin-top: 50px;
+}
+
+.address-texts {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.address-text {
+    font-size: 20px;
+    font-style: italic;
+}
+
+@media only screen and (min-width: 768px) {
+    .contact .hero-text {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    .contact .hero-title {
+        font-size: 60px;
+        margin-bottom: 10px;
+    }
+
+    .contact .hero-description {
+        width: 80%;
+        font-size: 30px;
+    }
+
+    .contact-infos {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1300px;
+        margin: 50px auto 0;
+    }
+
+    .contact-form {
+        width: 50%;
+    }
+}
+
+/* retouching */
+
+.image-spliter img {
+    width: 100%;
+    height: inherit;
+    vertical-align: middle;
+}
+
+.image-spliter,
+.retouching img,
+.mover {
+    overflow: hidden;
+    -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+                user-select: none;
+}
+
+.image-spliter {
+    position: relative;
+}
+
+.img-left {
+    position: absolute;
+    top: 0;
+    left:0;
+}
+
+.mover {
+    position:absolute;
+    width: 200px;
+    height: 100%;
+    top: 0;
+    left:0;
+    z-index: 10;
+}
+.mover:before,
+.mover:after {
+    position:absolute;
+    left:50%;
+    content: "";
+    background: #fff;
+    cursor: -webkit-grab;
+    cursor: grab;
+}
+
+.mover:before {
+    top: 0;
+    transform:translateX(-50%);
+    width: 1px;
+    height: 100%;
+}
+.mover:after {
+    top: 50%;
+    transform:translate(-50%, -50%);
+    width: 5px;
+    height: 80px;
+    border-radius: 5px;
+}

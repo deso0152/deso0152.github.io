@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./styles.css" />
+
+    <title>Lasso Studio</title>
+  </head>
+  <body>
+    <div class="home" id="home">
+      <header class="header">
+        <a class="logo-link" href="/">
+          <img
+            class="logo-image"
+            src="images/logo.png"
+            alt="lasso studio logo"
+          />
+        </a>
+        <div class="menu-icons">
+          <img
+            class="hamburguer"
+            src="./images/menu.png"
+            alt="icon to open menu"
+          />
+          <img
+            class="close"
+            src="./images/close.png"
+            alt="icon to close menu"
+          />
+        </div>
+        <nav class="menu">
+          <ul class="list-items">
+            <li class="list-item">
+              <a href="still.html" class="item-link">Still</a>
+            </li>
+            <li class="list-item">
+              <a href="food.html" class="item-link">Food</a>
+            </li>
+            <li class="list-item">
+              <a href="retouching.html" class="item-link">Retouching</a>
+            </li>
+            <li class="list-item">
+              <a href="about.html" class="item-link">About</a>
+            </li>
+            <li class="list-item">
+              <a href="contact.html" class="item-link">Contact</a>
+            </li>
+          </ul>
+          <div class="social-links">
+            <a href="#" class="social-link">
+              <img src="./images/search.svg" class="social-image pr-2" />
+            </a>
+            <a href="#" class="social-link">
+              <img src="./images/instagram.svg" class="social-image" />
+            </a>
+          </div>
+        </nav>
+      </header>
+      <main class="main">
+        <ul class="image-selector">
+          <li class="image-selector-item selected" id="still">
+            Still
+          </li>
+          <li class="image-selector-item" id="food">
+            Food
+          </li>
+          <li class="image-selector-item" id="retouching">
+            Retouching
+          </li>
+        </ul>
+      </main>
+    </div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
