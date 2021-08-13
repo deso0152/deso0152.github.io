@@ -48,3 +48,12 @@ imageSelectorItems.forEach(item => {
     item.addEventListener('click', homeRedirector)
 })
 
+// gotop
+
+const goTopSelector = document.querySelector('.arrow-top')
+
+goTopSelector.addEventListener('click', () => {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+})
+
